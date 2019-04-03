@@ -224,7 +224,13 @@ def winning_team
 end 
       
 
-def pla
+def player_with_longest_name
+  longest_name = 0 
+  
+  #iterate to name string 
+  #push to array and sort-- string.length?
+  return by [index]position?
+end 
 
 
 
