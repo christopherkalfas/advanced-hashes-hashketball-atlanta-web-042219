@@ -225,13 +225,17 @@ end
       
 
 def player_with_longest_name
-  longest_name = 0 
+  longest_name = "" 
   game_hash.each do |h_or_a, all_team_info|
-  #iterate to name string 
-  #push to array and sort-- string.length?
-  #return by [index]position?
+    all_team_info[:players].each do |player, stats|
+      if longest_name.length < player.length 
+        longest_name = player
+      end 
+    end 
+  end 
+  return player
 end 
-
+ 
 
 
 
